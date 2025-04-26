@@ -1,0 +1,135 @@
+/* Body and general layout */
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #ff6f00;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+.small-title {
+  font-size: 2.5em;
+  margin-top: 30px;
+  color: #ff6f00;
+  text-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  background-color: #ff6f00;
+  margin: 10px auto 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00;
+  animation: color-change 2s infinite alternate;
+}
+
+.crown {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  animation: crown-glow 2s infinite alternate;
+}
+
+/* Neon Glow Animation */
+@keyframes crown-glow {
+  0% {
+    filter: drop-shadow(0 0 5px #ff6f00) drop-shadow(0 0 10px #ff6f00);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #ff6f00) drop-shadow(0 0 25px #ff6f00);
+  }
+}
+
+/* Color Changing Line Animation */
+@keyframes color-change {
+  0% {
+    background-color: #ff6f00;
+  }
+  50% {
+    background-color: #ff0000; /* Change to red */
+  }
+  100% {
+    background-color: #ffcc00; /* Change to yellow */
+  }
+}
+
+/* Discord Button */
+.discord-btn {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #ff6f00;
+  border-radius: 30px;
+  color: #ff6f00;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 0 8px #ff6f00;
+  transition: 0.3s;
+}
+
+.discord-btn:hover {
+  background: #ff6f00;
+  color: #0d0d0d;
+  box-shadow: 0 0 20px #ff6f00, 0 0 30px #ff6f00;
+}
+
+/* Buttons Section */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-button {
+  display: block;
+  padding: 20px;
+  border: 2px solid #ff6f00;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #ff6f00;
+  background: transparent;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff6f00;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff6f00;
+  position: relative;
+}
+
+.site-button:hover {
+  background: #ff6f00;
+  color: #0d0d0d;
+  box-shadow: 0 0 20px #ff6f00, 0 0 30px #ff6f00;
+}
+
+.button-info {
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #ffae42;
+  text-shadow: 0 0 5px #ff6f00;
+}
+
+/* Warning Text */
+.warning-text {
+  margin-top: 30px;
+  color: #ff6f00;
+  font-size: 1.1em;
+  text-shadow: 0 0 8px #ff6f00;
+}
